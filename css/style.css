@@ -83,7 +83,8 @@ p { margin: 0 0 1em; }
 /* ---------- navbar ---------- */
 .navbar { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(150%) blur(14px); background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom: 1px solid var(--border); }
 .navbar-inner { display: flex; align-items: center; gap: 1.5rem; height: 68px; }
-.brand { display: flex; align-items: center; gap: .6rem; color: var(--text); font-weight: 800; font-size: 1.1rem; text-decoration: none !important; }
+.brand { display: flex; align-items: center; gap: .65rem; color: var(--text); font-weight: 800; font-size: 1.15rem; text-decoration: none !important; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0; }
 .brand .accent { color: var(--accent); }
 .nav-links { display: flex; gap: .25rem; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--muted); font-weight: 550; font-size: .92rem; padding: .45rem .7rem; border-radius: 8px; text-decoration: none; }

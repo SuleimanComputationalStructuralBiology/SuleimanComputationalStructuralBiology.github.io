@@ -1,29 +1,217 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2ee6c9"/>
-      <stop offset="50%" stop-color="#0a7ea4"/>
-      <stop offset="100%" stop-color="#8b7bff"/>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0e172e"/>
+      <stop offset="55%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </radialGradient>
+
+    <!-- Subtle Hex Crystallography Lattice -->
+    <pattern id="hexGrid" width="36" height="36" patternUnits="userSpaceOnUse" opacity="0.06">
+      <path d="M18 0 L36 10.4 L36 31.2 L18 41.6 L0 31.2 L0 10.4 Z" fill="none" stroke="#38bdf8" stroke-width="1"/>
+    </pattern>
+
+    <!-- Outer Squircle Metallic Border -->
+    <linearGradient id="badgeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#06d6a0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.9"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <!-- Ribbon Surface Gradients (3D Depth) -->
+    <!-- Outer Main Illuminated Strand -->
+    <linearGradient id="ribbonFrontTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="45%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="ribbonFrontMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="40%" stop-color="#3b82f6"/>
+      <stop offset="75%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="ribbonFrontBot" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06d6a0"/>
+      <stop offset="45%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Inner Ribbon Shading (Reverse Twist) -->
+    <linearGradient id="ribbonBack1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </linearGradient>
+
+    <linearGradient id="ribbonBack2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Active Site Catalytic Core Energy -->
+    <radialGradient id="catalyticCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#f59e0b" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#d97706" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Specular Beaded Node Gradients -->
+    <radialGradient id="nodeGold" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fbbf24"/>
+      <stop offset="75%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <radialGradient id="nodeCyan" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="75%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </radialGradient>
+
+    <radialGradient id="nodePurple" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#c084fc"/>
+      <stop offset="75%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </radialGradient>
+
+    <radialGradient id="nodeTeal" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#34d399"/>
+      <stop offset="75%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </radialGradient>
+
+    <!-- Filters for Realism & Glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="shadow3D" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#020617" flood-opacity="0.85"/>
     </filter>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#070b17"/>
-  <!-- stylized alpha-helix / kinase active-cleft node graph -->
-  <g stroke="url(#g)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">
-    <!-- helix ribbons -->
-    <path d="M16 48 C 20 40, 24 38, 32 38 C 40 38, 44 40, 48 48"/>
-    <path d="M16 36 C 20 28, 24 26, 32 26 C 40 26, 44 28, 48 36"/>
-    <path d="M16 24 C 20 16, 24 14, 32 14 C 40 14, 44 16, 48 24"/>
-    <!-- vertical backbone spine -->
-    <path d="M32 10 L 32 54" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Base Badge Squircle (512x512) -->
+  <rect x="10" y="10" width="492" height="492" rx="112" fill="url(#bgGrad)" stroke="url(#badgeBorder)" stroke-width="2.5"/>
+  <rect x="10" y="10" width="492" height="492" rx="112" fill="url(#hexGrid)"/>
+
+  <!-- Molecular Coordinate Grid / AlphaFold Distogram Axes -->
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 3">
+    <!-- Concentric coordinate distance shells -->
+    <circle cx="256" cy="256" r="190" fill="none" stroke="#60a5fa" stroke-width="0.8"/>
+    <circle cx="256" cy="256" r="135" fill="none" stroke="#38bdf8" stroke-width="0.8"/>
+    <circle cx="256" cy="256" r="82" fill="none" stroke="#34d399" stroke-width="0.8"/>
+    <!-- Cardinal axes -->
+    <line x1="256" y1="50" x2="256" y2="462" opacity="0.5"/>
+    <line x1="50" y1="256" x2="462" y2="256" opacity="0.5"/>
   </g>
-  <!-- active site coordination triad nodes -->
-  <circle cx="20" cy="24" r="3.2" fill="#2ee6c9"/>
-  <circle cx="44" cy="24" r="3.2" fill="#8b7bff"/>
-  <circle cx="32" cy="38" r="3.8" fill="#ffdb13"/>
-  <circle cx="20" cy="48" r="2.8" fill="#65cbf3"/>
-  <circle cx="44" cy="48" r="2.8" fill="#2ee6c9"/>
+
+  <!-- Residue Interaction Network (RIN) / Contact Map Graph Edges -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.45">
+    <line x1="175" y1="145" x2="256" y2="256"/>
+    <line x1="345" y1="135" x2="256" y2="256"/>
+    <line x1="380" y1="210" x2="256" y2="256"/>
+    <line x1="135" y1="315" x2="256" y2="256"/>
+    <line x1="175" y1="380" x2="256" y2="256"/>
+    <line x1="345" y1="385" x2="256" y2="256"/>
+    <!-- Inter-domain contacts -->
+    <line x1="175" y1="145" x2="345" y2="135" stroke="#818cf8" opacity="0.5"/>
+    <line x1="175" y1="380" x2="345" y2="385" stroke="#06d6a0" opacity="0.5"/>
+  </g>
+
+  <!-- Active Site Catalytic Cleft Corona (Background Glow) -->
+  <circle cx="256" cy="256" r="58" fill="url(#catalyticCore)"/>
+
+  <!-- ================================================================= -->
+  <!-- 3D MACROMOLECULAR FOLD / 'S' HELIX-RIBBON TOPOLOGY                -->
+  <!-- ================================================================= -->
+  <g filter="url(#shadow3D)">
+    <!-- 1. Under-fold 1 (Top Loop Returning in 3D Depth) -->
+    <path d="M 345 150 C 385 190, 360 235, 290 252
+             L 282 232 C 330 216, 345 182, 318 150 Z"
+          fill="url(#ribbonBack1)" opacity="0.95"/>
+
+    <!-- 2. Under-fold 2 (Bottom Loop Ascending Behind) -->
+    <path d="M 165 365 C 125 325, 150 275, 222 260
+             L 230 280 C 180 295, 165 330, 195 365 Z"
+          fill="url(#ribbonBack2)" opacity="0.95"/>
+
+    <!-- 3. Main Sweeping 'S' Central Ribbon (Front Plane) -->
+    <path d="M 355 125 
+             C 270 120, 190 170, 210 240
+             C 220 275, 255 295, 295 305
+             C 345 318, 365 355, 345 390
+             C 320 435, 235 435, 175 395
+             L 160 415
+             C 230 460, 345 460, 375 400
+             C 400 350, 370 295, 315 280
+             C 275 270, 245 250, 238 230
+             C 225 185, 285 145, 365 148 Z"
+          fill="url(#ribbonFrontMid)" filter="url(#softGlow)"/>
+
+    <!-- 4. Upper Alpha-Helix Cap & Pleat (N-terminal entry) -->
+    <path d="M 160 185
+             C 145 130, 210 95, 295 95
+             C 350 95, 395 120, 365 155
+             L 345 145
+             C 365 125, 335 112, 290 112
+             C 230 112, 175 135, 185 180
+             C 190 205, 215 220, 240 230
+             L 230 250
+             C 195 238, 168 215, 160 185 Z"
+          fill="url(#ribbonFrontTop)"/>
+
+    <!-- 5. Beta-Strand Directional Arrow (C-terminal exit) -->
+    <path d="M 185 375 L 138 405 L 175 430 Z" fill="#06d6a0"/>
+
+    <!-- 6. High-Precision Specular Ridge Along Backbone Axis -->
+    <path d="M 290 102 C 225 102, 170 130, 178 185 C 185 225, 235 248, 275 262 C 345 285, 385 330, 365 395 C 348 435, 260 445, 180 405" 
+          fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 350 132 C 270 128, 205 175, 222 235 C 235 280, 285 300, 325 315" 
+          fill="none" stroke="#e0f2fe" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CATALYTIC CENTER & ATOMIC COORDINATES                             -->
+  <!-- ================================================================= -->
+  <!-- Kinase Active Site (ATP / Mg2+ Coordination Center) -->
+  <g transform="translate(256, 256)">
+    <circle cx="0" cy="0" r="18" fill="url(#catalyticCore)"/>
+    <circle cx="0" cy="0" r="10" fill="url(#nodeGold)" stroke="#fef08a" stroke-width="1.6"/>
+    <circle cx="-3" cy="-3" r="2.8" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- C-alpha Residue Beaded Nodes (pLDDT & Kinase Motifs) -->
+  <!-- 1. P-loop / Glycine-rich (Electric Cyan) -->
+  <circle cx="178" cy="180" r="8" fill="url(#nodeCyan)" stroke="#bae6fd" stroke-width="1.4"/>
+  <circle cx="175.5" cy="177.5" r="2.2" fill="#ffffff"/>
+
+  <!-- 2. alphaC-helix Glu Partner (Royal Violet) -->
+  <circle cx="348" cy="145" r="7.5" fill="url(#nodePurple)" stroke="#e9d5ff" stroke-width="1.4"/>
+  <circle cx="345.5" cy="143" r="2" fill="#ffffff"/>
+
+  <!-- 3. HRD Catalytic Aspartate (Emerald Green) -->
+  <circle cx="215" cy="235" r="7" fill="url(#nodeTeal)" stroke="#a7f3d0" stroke-width="1.4"/>
+  <circle cx="213" cy="233" r="1.8" fill="#ffffff"/>
+
+  <!-- 4. DFG Motif Anchor (Amber Gold) -->
+  <circle cx="300" cy="275" r="7.5" fill="url(#nodeGold)" stroke="#fef08a" stroke-width="1.4"/>
+  <circle cx="297.5" cy="272.5" r="2" fill="#ffffff"/>
+
+  <!-- 5. Activation Loop Apex (Electric Cyan) -->
+  <circle cx="365" cy="355" r="8" fill="url(#nodeCyan)" stroke="#bae6fd" stroke-width="1.4"/>
+  <circle cx="362.5" cy="352.5" r="2.2" fill="#ffffff"/>
+
+  <!-- 6. C-terminal Hydrophobic Spine (Mint Teal) -->
+  <circle cx="255" cy="425" r="7" fill="url(#nodeTeal)" stroke="#a7f3d0" stroke-width="1.4"/>
+  <circle cx="253" cy="423" r="1.8" fill="#ffffff"/>
 </svg>

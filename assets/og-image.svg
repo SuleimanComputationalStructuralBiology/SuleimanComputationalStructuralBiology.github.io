@@ -1,65 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070b17"/>
-      <stop offset="50%" stop-color="#0f1730"/>
-      <stop offset="100%" stop-color="#070b17"/>
+    <radialGradient id="ogBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0f1730"/>
+      <stop offset="50%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#030509"/>
+    </radialGradient>
+
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2ee6c9"/>
-      <stop offset="60%" stop-color="#0a7ea4"/>
-      <stop offset="100%" stop-color="#8b7bff"/>
+
+    <pattern id="ogHex" width="50" height="50" patternUnits="userSpaceOnUse" opacity="0.05">
+      <path d="M25 0 L50 14.4 L50 43.3 L25 57.7 L0 43.3 L0 14.4 Z" fill="none" stroke="#38bdf8" stroke-width="1"/>
+    </pattern>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e172e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#080d1a" stop-opacity="0.9"/>
     </linearGradient>
+
+    <filter id="ogGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#00f2fe" flood-opacity="0.18"/>
+    </filter>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="950" cy="200" r="280" fill="#8b7bff" opacity="0.12"/>
-  <circle cx="200" cy="500" r="240" fill="#2ee6c9" opacity="0.1"/>
 
-  <!-- Logo emblem -->
-  <g transform="translate(100, 110)">
-    <rect width="100" height="100" rx="22" fill="#141d3b" stroke="#1f2a4d" stroke-width="2"/>
-    <g stroke="url(#grad)" stroke-width="3.5" stroke-linecap="round" fill="none">
-      <path d="M26 74 C 32 62, 39 59, 50 59 C 61 59, 68 62, 74 74"/>
-      <path d="M26 56 C 32 44, 39 41, 50 41 C 61 41, 68 44, 74 56"/>
-      <path d="M26 38 C 32 26, 39 23, 50 23 C 61 23, 68 26, 74 38"/>
-      <path d="M50 16 L 50 84" stroke-width="2" stroke-dasharray="3 4" opacity="0.6"/>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogHex)"/>
+
+  <!-- Background Ambient Color Auroras -->
+  <circle cx="1050" cy="180" r="340" fill="#818cf8" opacity="0.1" filter="blur(60px)"/>
+  <circle cx="150" cy="480" r="300" fill="#00f2fe" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- TOP LEFT: BRAND HEADER WITH EMBLEM -->
+  <g transform="translate(80, 70)">
+    <!-- 100x100 Emblem Badge -->
+    <rect width="104" height="104" rx="24" fill="#0b1224" stroke="#38bdf8" stroke-width="2" filter="url(#ogGlow)"/>
+
+    <!-- Emblem Inner Details -->
+    <circle cx="52" cy="52" r="36" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.3"/>
+    <g stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2" opacity="0.4">
+      <line x1="32" y1="30" x2="52" y2="52"/>
+      <line x1="72" y1="30" x2="52" y2="52"/>
+      <line x1="30" y1="74" x2="52" y2="52"/>
+      <line x1="74" y1="74" x2="52" y2="52"/>
     </g>
-    <circle cx="32" cy="38" r="4.5" fill="#2ee6c9"/>
-    <circle cx="68" cy="38" r="4.5" fill="#8b7bff"/>
-    <circle cx="50" cy="59" r="5" fill="#ffdb13"/>
-    <circle cx="32" cy="74" r="4" fill="#65cbf3"/>
-    <circle cx="68" cy="74" r="4" fill="#2ee6c9"/>
+
+    <!-- S Ribbon in mini scale -->
+    <path d="M 72 28 C 54 26, 38 37, 42 54 C 45 62, 53 67, 62 70 C 74 73, 79 82, 74 89 C 68 97, 50 97, 36 89 L 33 95 C 49 105, 75 104, 82 90 C 88 78, 80 66, 67 63 C 57 60, 50 56, 48 50 C 45 40, 58 32, 75 33 Z"
+          fill="url(#ogGrad)"/>
+    <path d="M 38 85 L 28 92 L 36 97 Z" fill="#06d6a0"/>
+
+    <circle cx="52" cy="52" r="4.5" fill="#fbbf24" stroke="#fef08a" stroke-width="1"/>
+    <circle cx="36" cy="38" r="2.5" fill="#00f2fe"/>
+    <circle cx="71" cy="30" r="2.2" fill="#818cf8"/>
+    <circle cx="75" cy="80" r="2.5" fill="#00f2fe"/>
+    <circle cx="54" cy="95" r="2" fill="#06d6a0"/>
+
+    <!-- Brand Typography beside emblem -->
+    <text x="130" y="44" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">
+      SULEIMAN
+    </text>
+    <text x="130" y="80" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="700" fill="url(#ogGrad)" letter-spacing="-0.3">
+      Computational Structural Biology
+    </text>
   </g>
 
-  <!-- Title & copy -->
-  <text x="100" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#e6ebf7" letter-spacing="-1">
-    Suleiman <tspan fill="url(#grad)">Computational Structural Biology</tspan>
-  </text>
-  <text x="100" y="325" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#8d99b8" letter-spacing="1.5">
-    ALPHAFOLD2 · KINASE MECHANICS · MOLECULAR DOCKING
-  </text>
+  <!-- CENTER: HERO TITLE & PLATFORM SUMMARY -->
+  <g transform="translate(80, 220)">
+    <text x="0" y="45" font-family="'Inter', system-ui, sans-serif" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">
+      AlphaFold2 Structures, Kinase Mechanics
+    </text>
+    <text x="0" y="98" font-family="'Inter', system-ui, sans-serif" font-size="46" font-weight="800" fill="url(#ogGrad)" letter-spacing="-1">
+      &amp; Molecular Virtual Screening
+    </text>
 
-  <text x="100" y="400" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="20" fill="#c0ccdf" width="900">
-    Advanced pipelines for deep learning-based structure prediction,
-  </text>
-  <text x="100" y="430" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="20" fill="#c0ccdf">
-    vector-algebraic structural analytics, and automated virtual screening.
-  </text>
+    <text x="0" y="152" font-family="'Inter', system-ui, sans-serif" font-size="20" fill="#94a3b8" font-weight="400">
+      Multi-scale computational biology platform: deep-learning 3D prediction, vector-algebraic
+    </text>
+    <text x="0" y="180" font-family="'Inter', system-ui, sans-serif" font-size="20" fill="#94a3b8" font-weight="400">
+      structural analytics, interactive 3Dmol models, and an interlinked scientific knowledge base.
+    </text>
+  </g>
 
-  <!-- Metrics pills -->
-  <g transform="translate(100, 485)">
-    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
-    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">RESEARCH</text>
-    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#2ee6c9" text-anchor="middle">AKT1 &amp; STN7/STN8</text>
-  </g>
-  <g transform="translate(300, 485)">
-    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
-    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">3D MODELS</text>
-    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b7bff" text-anchor="middle">Interactive 3Dmol</text>
-  </g>
-  <g transform="translate(500, 485)">
-    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
-    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">KNOWLEDGE BASE</text>
-    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#2ee6c9" text-anchor="middle">41 Interlinked Notes</text>
+  <!-- BOTTOM METRICS & FEATURE CARDS -->
+  <g transform="translate(80, 460)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="240" height="90" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="24" y="34" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1">RESEARCH TARGETS</text>
+    <text x="24" y="66" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#00f2fe">AKT1 &amp; STN7/STN8</text>
+
+    <!-- Card 2 -->
+    <rect x="265" y="0" width="240" height="90" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="289" y="34" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1">3D EXPLORER</text>
+    <text x="289" y="66" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#38bdf8">Interactive 3Dmol</text>
+
+    <!-- Card 3 -->
+    <rect x="530" y="0" width="240" height="90" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="554" y="34" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1">KNOWLEDGE BASE</text>
+    <text x="554" y="66" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#818cf8">41 Interlinked Notes</text>
+
+    <!-- Card 4 -->
+    <rect x="795" y="0" width="245" height="90" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="819" y="34" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1">CURRICULUM</text>
+    <text x="819" y="66" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#06d6a0">9 Master Modules</text>
   </g>
 </svg>
