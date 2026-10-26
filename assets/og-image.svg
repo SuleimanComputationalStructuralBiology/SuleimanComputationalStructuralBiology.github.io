@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b17"/>
+      <stop offset="50%" stop-color="#0f1730"/>
+      <stop offset="100%" stop-color="#070b17"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2ee6c9"/>
+      <stop offset="60%" stop-color="#0a7ea4"/>
+      <stop offset="100%" stop-color="#8b7bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="950" cy="200" r="280" fill="#8b7bff" opacity="0.12"/>
+  <circle cx="200" cy="500" r="240" fill="#2ee6c9" opacity="0.1"/>
+
+  <!-- Logo emblem -->
+  <g transform="translate(100, 110)">
+    <rect width="100" height="100" rx="22" fill="#141d3b" stroke="#1f2a4d" stroke-width="2"/>
+    <g stroke="url(#grad)" stroke-width="3.5" stroke-linecap="round" fill="none">
+      <path d="M26 74 C 32 62, 39 59, 50 59 C 61 59, 68 62, 74 74"/>
+      <path d="M26 56 C 32 44, 39 41, 50 41 C 61 41, 68 44, 74 56"/>
+      <path d="M26 38 C 32 26, 39 23, 50 23 C 61 23, 68 26, 74 38"/>
+      <path d="M50 16 L 50 84" stroke-width="2" stroke-dasharray="3 4" opacity="0.6"/>
+    </g>
+    <circle cx="32" cy="38" r="4.5" fill="#2ee6c9"/>
+    <circle cx="68" cy="38" r="4.5" fill="#8b7bff"/>
+    <circle cx="50" cy="59" r="5" fill="#ffdb13"/>
+    <circle cx="32" cy="74" r="4" fill="#65cbf3"/>
+    <circle cx="68" cy="74" r="4" fill="#2ee6c9"/>
+  </g>
+
+  <!-- Title & copy -->
+  <text x="100" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#e6ebf7" letter-spacing="-1">
+    Suleiman <tspan fill="url(#grad)">Computational Structural Biology</tspan>
+  </text>
+  <text x="100" y="325" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#8d99b8" letter-spacing="1.5">
+    ALPHAFOLD2 · KINASE MECHANICS · MOLECULAR DOCKING
+  </text>
+
+  <text x="100" y="400" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="20" fill="#c0ccdf" width="900">
+    Advanced pipelines for deep learning-based structure prediction,
+  </text>
+  <text x="100" y="430" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="20" fill="#c0ccdf">
+    vector-algebraic structural analytics, and automated virtual screening.
+  </text>
+
+  <!-- Metrics pills -->
+  <g transform="translate(100, 485)">
+    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
+    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">RESEARCH</text>
+    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#2ee6c9" text-anchor="middle">AKT1 &amp; STN7/STN8</text>
+  </g>
+  <g transform="translate(300, 485)">
+    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
+    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">3D MODELS</text>
+    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b7bff" text-anchor="middle">Interactive 3Dmol</text>
+  </g>
+  <g transform="translate(500, 485)">
+    <rect width="180" height="56" rx="14" fill="#141d3b" stroke="#1f2a4d"/>
+    <text x="90" y="27" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8d99b8" text-anchor="middle">KNOWLEDGE BASE</text>
+    <text x="90" y="47" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#2ee6c9" text-anchor="middle">41 Interlinked Notes</text>
+  </g>
+</svg>

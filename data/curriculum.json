@@ -1,0 +1,72 @@
+{
+  "course": "Structural Bioinformatics (MSc)",
+  "instructor": "Prof. Carlo Camilloni, University of Milano",
+  "source": "https://github.com/carlocamilloni/Structural-Bioinformatics",
+  "license": "MIT",
+  "modules": [
+    {
+      "n": "01",
+      "title": "Structural Biology & Structure Visualisation",
+      "tools": "VMD",
+      "lecture": "01_StructuralBiology"
+    },
+    {
+      "n": "02",
+      "title": "Stochastic Molecules & Statistics",
+      "tools": "Python · NumPy · SciPy",
+      "lecture": "02_StochasticMolecules"
+    },
+    {
+      "n": "03",
+      "title": "Molecular Dynamics Simulations",
+      "tools": "GROMACS",
+      "lecture": "03_MolecularDynamics"
+    },
+    {
+      "n": "04",
+      "title": "MD Trajectory Analysis",
+      "tools": "MDAnalysis",
+      "lecture": "03_MolecularDynamics"
+    },
+    {
+      "n": "05",
+      "title": "Enhanced Sampling & Coarse-Graining",
+      "tools": "Metadynamics · PLUMED · Martini",
+      "lecture": "04_EnhancedMD"
+    },
+    {
+      "n": "06",
+      "title": "Quantum Mechanics & QM/MM",
+      "tools": "PySCF / Psi4",
+      "lecture": "06_QM_MM_more"
+    },
+    {
+      "n": "07",
+      "title": "Protein Structure Prediction",
+      "tools": "AlphaFold2 · ColabFold",
+      "lecture": "08_StructurePredictionDocking"
+    },
+    {
+      "n": "08",
+      "title": "Molecular Docking",
+      "tools": "AutoDock Vina",
+      "lecture": "08_StructurePredictionDocking"
+    },
+    {
+      "n": "09",
+      "title": "Integrative Modelling & Protein Design",
+      "tools": "RFdiffusion · ProteinMPNN",
+      "lecture": "09_Integrative_design"
+    }
+  ],
+  "lectures_extra": [
+    {
+      "title": "Markov State Models",
+      "lecture": "05_MarkovSM"
+    },
+    {
+      "title": "Machine Learning in Structural Biology",
+      "lecture": "07_MachineLearning"
+    }
+  ]
+}

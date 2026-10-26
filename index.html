@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <script>try{document.querySelector('meta[name="color-scheme"]').content=localStorage.getItem("color-scheme")??"light dark"}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suleiman Computational Structural Biology | AlphaFold, Docking &amp; Kinase Structural Analytics</title>
+  <meta name="description" content="Computational structural biology portfolio of Suleiman Hajizadeh: AlphaFold2 modelling of AKT1, comparative and complex modelling of chloroplast kinases STN7/STN8, interactive 3D structures, figures and a structural biology knowledge base." />
+  <meta name="keywords" content="Computational Structural Biology, AlphaFold2, ColabFold, AF2-multimer, AKT1, STN7, STN8, pLDDT, PAE, Ramachandran, Molecular Docking, AutoDock Vina, Suleiman Hajizadeh" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Suleiman Computational Structural Biology" />
+  <meta property="og:description" content="Deep-learning structure prediction, structural analytics and docking pipelines — interactive 3D models, figures and knowledge base." />
+  <meta property="og:url" content="https://suleimancomputationalstructuralbiology.github.io/" />
+  <meta property="og:image" content="https://suleimancomputationalstructuralbiology.github.io/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#top" class="brand" aria-label="Suleiman Computational Structural Biology — home">
+        <img src="assets/logo-icon.svg" alt="" width="36" height="36" />
+        <span class="brand-text">Suleiman<span class="accent">CSB</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#explorer">3D Explorer</a></li>
+          <li><a href="#gallery">Figures</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#knowledge">Knowledge Base</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" type="button">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="visually-hidden label-to-dark">Switch to dark theme</span>
+          <span class="visually-hidden label-to-light">Switch to light theme</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="https://github.com/SuleimanComputationalStructuralBiology" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <button id="menuToggle" class="btn-icon menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computational Structural Biology Laboratory</p>
+          <h1>From sequence to <span class="gradient-text">atomic mechanism</span>.</h1>
+          <p class="lead">
+            Deep-learning structure prediction, vector-algebraic structural analytics and automated docking
+            pipelines — applied to the oncogenic hub kinase <strong>AKT1</strong> and the chloroplast thylakoid
+            kinases <strong>STN7 / STN8</strong>.
+          </p>
+          <div class="hero-cta">
+            <a href="#research" class="btn btn-primary">Explore research</a>
+            <a href="#explorer" class="btn btn-ghost">Open 3D explorer</a>
+          </div>
+          <dl class="stats" id="heroStats">
+            <div><dt>Projects</dt><dd data-stat="projects">2</dd></div>
+            <div><dt>3D models</dt><dd data-stat="structures">2</dd></div>
+            <div><dt>Figures</dt><dd data-stat="figures">30</dd></div>
+            <div><dt>Wiki notes</dt><dd data-stat="wiki_notes">41</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/figures/akt1/AKT1_pLDDT_3D.png" alt="" width="1200" height="900" fetchpriority="high" />
+          <div class="hero-badge">
+            <span class="dot"></span> AKT1 · AlphaFold2 · coloured by pLDDT
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Research portfolio</p>
+          <h2>Projects</h2>
+          <p class="section-sub">Each project is a reproducible pipeline maintained in the private core repository; curated results are published here.</p>
+        </header>
+        <div class="project-grid" id="projectCards"></div>
+        <div id="projectDetails"></div>
+      </div>
+    </section>
+
+    <!-- 3D EXPLORER -->
+    <section id="explorer" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Interactive</p>
+          <h2>3D Structure &amp; Confidence Explorer</h2>
+          <p class="section-sub">Rotate, zoom and inspect the predicted models. Click the pLDDT track to locate a residue in 3D.</p>
+        </header>
+
+        <div class="explorer-toolbar" role="toolbar" aria-label="Structure controls">
+          <div class="seg" role="radiogroup" aria-label="Model">
+            <button type="button" class="seg-btn is-active" data-model="akt1" aria-pressed="true">AKT1 (AF2)</button>
+            <button type="button" class="seg-btn" data-model="stn7-stn8" aria-pressed="false">STN7–STN8 (AF2-multimer)</button>
+          </div>
+          <label class="field">
+            <span>Style</span>
+            <select id="styleSelect">
+              <option value="cartoon">Cartoon</option>
+              <option value="surface">Surface + cartoon</option>
+              <option value="stick">Sticks</option>
+              <option value="sphere">Spheres</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Colour</span>
+            <select id="colorSelect">
+              <option value="plddt">pLDDT confidence</option>
+              <option value="chain">Chain</option>
+              <option value="ss">Secondary structure</option>
+              <option value="spectrum">N→C spectrum</option>
+            </select>
+          </label>
+          <label class="check"><input type="checkbox" id="spinToggle" /> Spin</label>
+          <button type="button" class="btn btn-ghost btn-sm" id="resetView">Reset view</button>
+          <a class="btn btn-ghost btn-sm" id="downloadPdb" href="#" download>Download PDB</a>
+        </div>
+
+        <div class="explorer-grid">
+          <div class="viewer-card">
+            <div id="viewer3d" class="viewer3d" role="img" aria-label="Interactive 3D protein structure"></div>
+            <div class="viewer-status" id="viewerStatus">Loading 3D engine…</div>
+            <div class="legend" id="plddtLegend">
+              <span><i style="--c:#0053d6"></i>Very high ≥ 90</span>
+              <span><i style="--c:#65cbf3"></i>Confident 70–90</span>
+              <span><i style="--c:#ffdb13"></i>Low 50–70</span>
+              <span><i style="--c:#ff7d45"></i>Very low &lt; 50</span>
+            </div>
+          </div>
+          <div class="side-panels">
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Per-residue pLDDT</h3>
+                <span class="muted" id="residueReadout">hover the track</span>
+              </div>
+              <canvas id="plddtChart" class="chart" height="180" aria-label="Per-residue pLDDT chart" role="img"></canvas>
+            </div>
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Predicted Aligned Error</h3>
+                <span class="muted" id="paeReadout">Å</span>
+              </div>
+              <canvas id="paeChart" class="chart chart-square" aria-label="Predicted aligned error heatmap" role="img"></canvas>
+              <div class="pae-scale"><span>0 Å</span><i></i><span id="paeMax">30 Å</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Publication-quality output</p>
+          <h2>Figure Gallery</h2>
+        </header>
+        <div class="filters" id="galleryFilters" role="group" aria-label="Filter figures"></div>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- METHODS -->
+    <section id="methods" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Mathematical &amp; biophysical foundations</p>
+          <h2>Methods</h2>
+          <p class="section-sub">Pipelines are built on explicit derivations implemented in Python rather than GUI-only tools.</p>
+        </header>
+        <div class="method-grid">
+          <article class="method-card">
+            <h3>Local Distance Difference Test (pLDDT)</h3>
+            <p>Superposition-free local agreement over Cα pairs within 15 Å:</p>
+            <div class="math">$$\text{LDDT}=\frac{1}{4|D|}\sum_{(i,j)\in D}\sum_{t\in\{0.5,1,2,4\}}\mathbb{I}\big(|d^{\text{pred}}_{ij}-d^{\text{true}}_{ij}|\le t\big)$$</div>
+          </article>
+          <article class="method-card">
+            <h3>Backbone dihedrals (φ, ψ)</h3>
+            <p>From four atoms with bond vectors \(\mathbf v_1,\mathbf v_2,\mathbf v_3\) and normals \(\mathbf n_1=\mathbf v_1\times\mathbf v_2\), \(\mathbf n_2=\mathbf v_2\times\mathbf v_3\):</p>
+            <div class="math">$$\theta=\operatorname{atan2}\!\Big(\big(\mathbf n_1\times\mathbf n_2\big)\cdot\tfrac{\mathbf v_2}{\lVert\mathbf v_2\rVert},\;\mathbf n_1\cdot\mathbf n_2\Big)$$</div>
+          </article>
+          <article class="method-card">
+            <h3>Cα contact topology</h3>
+            <p>Euclidean distance matrix with a non-trivial contact definition:</p>
+            <div class="math">$$D_{ij}=\lVert\mathbf r_i-\mathbf r_j\rVert_2,\qquad D_{ij}\le 8\,\text{Å}\;\wedge\;|i-j|\ge 6$$</div>
+          </article>
+          <article class="method-card">
+            <h3>Predicted Aligned Error</h3>
+            <p>Expected position error of residue \(j\) when aligned on the frame of residue \(i\):</p>
+            <div class="math">$$\text{PAE}_{ij}=\mathbb E\big[\lVert\mathbf x^{\text{true}}_j-\mathbf T_i\,\mathbf x^{\text{pred}}_j\rVert\big]$$</div>
+          </article>
+          <article class="method-card">
+            <h3>Kabsch superposition &amp; RMSD</h3>
+            <p>Optimal rotation from the SVD of the covariance \(H=P^{\top}Q=U\Sigma V^{\top}\):</p>
+            <div class="math">$$R=V\,\mathrm{diag}(1,1,\det(VU^{\top}))\,U^{\top},\quad \text{RMSD}=\sqrt{\tfrac1N\textstyle\sum_i\lVert R\mathbf p_i-\mathbf q_i\rVert^2}$$</div>
+          </article>
+          <article class="method-card">
+            <h3>Shannon conservation</h3>
+            <p>Per-column entropy of the multiple sequence alignment (H = 0 ⇒ invariant):</p>
+            <div class="math">$$H_c=-\sum_{a}p_{a,c}\log_2 p_{a,c}$$</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KNOWLEDGE BASE -->
+    <section id="knowledge" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Compounding knowledge</p>
+          <h2>Structural Biology Knowledge Base</h2>
+          <p class="section-sub">An interlinked wiki of entities, concepts, syntheses and source notes compiled alongside the research.</p>
+        </header>
+        <div class="kb-controls">
+          <label class="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="visually-hidden">Search the knowledge base</span>
+            <input type="search" id="kbSearch" placeholder="Search notes, e.g. pLDDT, LHCII, docking…" autocomplete="off" />
+          </label>
+          <div class="filters" id="kbFilters" role="group" aria-label="Filter notes by type"></div>
+        </div>
+        <p class="muted" id="kbCount" aria-live="polite"></p>
+        <div class="kb-grid" id="kbGrid"></div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Training</p>
+          <h2>Structural Bioinformatics Curriculum</h2>
+          <p class="section-sub" id="curriculumSub"></p>
+        </header>
+        <ol class="module-grid" id="moduleGrid"></ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Suleiman Hajizadeh</h2>
+          <p class="lead">Structural bioinformatician (IMBB, Azerbaijan) working at the interface of systems biology, deep-learning structure prediction and molecular modelling.</p>
+          <p>Research spans the multi-scale path <em>transcriptomics → co-expression network hubs → AlphaFold structure → allosteric targetability</em>, and comparative structural evolution of photosynthetic regulatory kinases.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="mailto:suleyman.hacizade1@gmail.com">Contact</a>
+            <a class="btn btn-ghost" href="https://github.com/SuleimanHajizadeh" target="_blank" rel="noopener noreferrer">Personal GitHub</a>
+          </div>
+        </div>
+        <div class="arch-card">
+          <h3>Organisation architecture</h3>
+          <ul class="arch">
+            <li>
+              <span class="lock" aria-hidden="true">🔒</span>
+              <div>
+                <strong>SuleimanComputationalStructuralBiology</strong>
+                <span class="muted">Private core repository — raw data, MSAs, pipelines, manuscripts, notebooks &amp; the LLM wiki source.</span>
+              </div>
+            </li>
+            <li>
+              <span class="lock" aria-hidden="true">🌐</span>
+              <div>
+                <strong>SuleimanComputationalStructuralBiology.github.io</strong>
+                <span class="muted">This public site — curated figures, models and metrics exported by <code>site_export/export_site_data.py</code>.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Suleiman Hajizadeh · SuleimanComputationalStructuralBiology</p>
+      <p class="muted" id="buildInfo"></p>
+    </div>
+  </footer>
+
+  <!-- Figure lightbox -->
+  <dialog id="lightbox" class="lightbox" closedby="any" aria-labelledby="lightboxCaption">
+    <form method="dialog"><button class="dialog-close" aria-label="Close">✕</button></form>
+    <img id="lightboxImg" src="data:," alt="" />
+    <p id="lightboxCaption"></p>
+  </dialog>
+
+  <!-- Wiki reader -->
+  <dialog id="noteReader" class="reader" closedby="any" aria-labelledby="noteTitle">
+    <form method="dialog"><button class="dialog-close" aria-label="Close">✕</button></form>
+    <header class="reader-head">
+      <span class="pill" id="noteType"></span>
+      <h2 id="noteTitle"></h2>
+      <div class="tags" id="noteTags"></div>
+    </header>
+    <article class="prose" id="noteBody"></article>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/3dmol@2.4.2/build/3Dmol-min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" defer crossorigin="anonymous"></script>
+  <script src="js/charts.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

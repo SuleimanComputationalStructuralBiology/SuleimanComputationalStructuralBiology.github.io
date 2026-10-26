@@ -1,0 +1,519 @@
+[
+  {
+    "id": "akt1",
+    "title": "AKT1 Kinase Structural Modeling",
+    "subtitle": "AlphaFold2 structure of the TNBC hub kinase AKT1",
+    "organism": "Homo sapiens",
+    "targets": [
+      {
+        "name": "AKT1",
+        "uniprot": "P31749"
+      }
+    ],
+    "status": "Completed",
+    "tags": [
+      "AlphaFold2",
+      "ColabFold v1.6.1",
+      "pLDDT",
+      "PAE",
+      "Ramachandran",
+      "Contact map",
+      "TNBC"
+    ],
+    "summary": "AKT1 (RAC-alpha serine/threonine-protein kinase) is the central hub kinase identified by co-expression network analysis of triple-negative breast cancer. Its 3D structure was predicted with AlphaFold2 (ColabFold, MMseqs2 MSA) and characterised with custom Python routines for per-residue confidence, backbone dihedral geometry and Cα contact topology.",
+    "pipeline": [
+      "FASTA (UniProt P31749)",
+      "ColabFold MMseqs2 MSA",
+      "AlphaFold2 structure module (5 models)",
+      "Top-ranked PDB",
+      "pLDDT · PAE · Ramachandran · Contact map"
+    ],
+    "metrics": [
+      {
+        "label": "Residues modelled",
+        "value": 291
+      },
+      {
+        "label": "Mean pLDDT",
+        "value": 65.61
+      },
+      {
+        "label": "pTM",
+        "value": 0.45
+      },
+      {
+        "label": "Very-high conf. (≥90)",
+        "value": "24.7%"
+      },
+      {
+        "label": "Disordered (<50)",
+        "value": "30.2%"
+      },
+      {
+        "label": "Cα contacts (≤8 Å)",
+        "value": 573
+      }
+    ],
+    "findings": [
+      "Kinase core is predicted with very high confidence while the PH-domain linker and C-terminal regulatory tail are intrinsically disordered (pLDDT < 50).",
+      "Ramachandran analysis: 24.6% α-helix, 32.9% β-strand, 3.1% left-handed/Gly, 39.4% loops.",
+      "573 long-range Cα contacts (1.4% of all pairs); distance range 3.0–76.7 Å."
+    ],
+    "structure": "structures/AKT1_AF2_rank001.pdb",
+    "tracks": "data/tracks/akt1.json",
+    "figures": [
+      {
+        "src": "assets/figures/akt1/AKT1_cartoon_3D.png",
+        "caption": "AKT1 cartoon backbone (PyMOL render)",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_pLDDT_3D.png",
+        "caption": "AKT1 coloured by pLDDT confidence",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_surface_3D.png",
+        "caption": "AKT1 molecular surface",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_pLDDT.png",
+        "caption": "Per-residue pLDDT confidence profile",
+        "category": "confidence"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_Ramachandran.png",
+        "caption": "Ramachandran φ/ψ backbone torsion plot",
+        "category": "geometry"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_ContactMap.png",
+        "caption": "Cα pairwise distance & contact map (≤ 8 Å, |i−j| ≥ 6)",
+        "category": "topology"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_TNBC_42642_0_pae.png",
+        "caption": "ColabFold predicted aligned error (5 models)",
+        "category": "confidence"
+      },
+      {
+        "src": "assets/figures/akt1/AKT1_TNBC_42642_0_coverage.png",
+        "caption": "MSA sequence coverage (MMseqs2)",
+        "category": "msa"
+      }
+    ]
+  },
+  {
+    "id": "stn7-stn8",
+    "title": "STN7 / STN8 Chloroplast Kinases",
+    "subtitle": "Comparative structural, evolutionary & complex modelling of thylakoid kinases",
+    "organism": "Arabidopsis thaliana (+ rice, maize, Chlamydomonas)",
+    "targets": [
+      {
+        "name": "STN7",
+        "uniprot": "Q9S713"
+      },
+      {
+        "name": "STN8",
+        "uniprot": "Q9LZV4"
+      }
+    ],
+    "status": "Manuscript in preparation",
+    "tags": [
+      "AlphaFold DB v6",
+      "AF2-multimer v3",
+      "Kabsch/SVD RMSD",
+      "MSA",
+      "Shannon entropy",
+      "NJ phylogeny",
+      "Kyte–Doolittle",
+      "AutoDock Vina"
+    ],
+    "summary": "STN7 drives PSII↔PSI state transitions through LHCII phosphorylation, while STN8 phosphorylates PSII core proteins during high-light repair. This pipeline retrieves AlphaFold models and orthologs across dicots, monocots and green algae, performs MSA, phylogeny, SVD superposition, domain-level confidence statistics, hydropathy profiling, motif annotation and models the STN7–STN8 heterodimer with AlphaFold2-multimer; ligand libraries are prepared for docking.",
+    "pipeline": [
+      "UniProt / AlphaFold DB retrieval",
+      "Ortholog MSA & NJ phylogeny",
+      "SVD superposition & RMSD",
+      "Domain pLDDT statistics",
+      "AF2-multimer heterodimer",
+      "Receptor/ligand prep → AutoDock Vina"
+    ],
+    "metrics": [
+      {
+        "label": "STN7 kinase pLDDT",
+        "value": 84.5
+      },
+      {
+        "label": "STN8 kinase pLDDT",
+        "value": 85.5
+      },
+      {
+        "label": "Kinase RMSD",
+        "value": "3.76 Å",
+        "note": "312 Cα"
+      },
+      {
+        "label": "Heterodimer ipTM",
+        "value": 0.75
+      },
+      {
+        "label": "Heterodimer pTM",
+        "value": 0.82
+      },
+      {
+        "label": "Conserved MSA columns",
+        "value": "57.02%",
+        "note": "621/1089"
+      }
+    ],
+    "findings": [
+      "Arabidopsis STN7 and STN8 share 36.1% sequence identity, consistent with an ancient duplication.",
+      "57.02% of alignment columns are perfectly conserved (H = 0) across land plants and algae.",
+      "Kinase domains are far more confident than transit peptides / tails (t-test p < 1e-40 for both).",
+      "AF2-multimer heterodimer: ipTM 0.75, pTM 0.82, 2179 inter-chain contact pairs (≤ 6.0 Å).",
+      "No classic TM helix (> 1.6): max Kyte–Doolittle peaks 1.49 (STN7) and 1.59 (STN8); profiles correlate (Pearson r = 0.2039, p = 0.0419)."
+    ],
+    "domains": {
+      "STN7": {
+        "transit_peptide": [
+          1,
+          59
+        ],
+        "transmembrane_anchor": [
+          60,
+          100
+        ],
+        "kinase_domain": [
+          101,
+          430
+        ],
+        "activation_loop": [
+          281,
+          310
+        ],
+        "c_terminal_tail": [
+          431,
+          565
+        ]
+      },
+      "STN8": {
+        "transit_peptide": [
+          1,
+          59
+        ],
+        "transmembrane_anchor": [
+          60,
+          95
+        ],
+        "kinase_domain": [
+          96,
+          390
+        ],
+        "activation_loop": [
+          261,
+          290
+        ],
+        "c_terminal_tail": [
+          391,
+          517
+        ]
+      }
+    },
+    "domain_plddt": {
+      "STN7": {
+        "transit_peptide": {
+          "n_residues": 59,
+          "mean_plddt": 34.43,
+          "std_plddt": 4.31,
+          "confidence_tier": "Very Low (<50)"
+        },
+        "transmembrane_anchor": {
+          "n_residues": 41,
+          "mean_plddt": 59.2,
+          "std_plddt": 14.32,
+          "confidence_tier": "Low (50-70)"
+        },
+        "kinase_domain": {
+          "n_residues": 300,
+          "mean_plddt": 82.97,
+          "std_plddt": 10.68,
+          "confidence_tier": "High (70-90)"
+        },
+        "activation_loop": {
+          "n_residues": 30,
+          "mean_plddt": 85.52,
+          "std_plddt": 8.03,
+          "confidence_tier": "High (70-90)"
+        },
+        "c_terminal_tail": {
+          "n_residues": 132,
+          "mean_plddt": 56.14,
+          "std_plddt": 17.0,
+          "confidence_tier": "Low (50-70)"
+        }
+      },
+      "STN8": {
+        "transit_peptide": {
+          "n_residues": 59,
+          "mean_plddt": 29.59,
+          "std_plddt": 4.04,
+          "confidence_tier": "Very Low (<50)"
+        },
+        "transmembrane_anchor": {
+          "n_residues": 36,
+          "mean_plddt": 69.25,
+          "std_plddt": 14.57,
+          "confidence_tier": "Low (50-70)"
+        },
+        "kinase_domain": {
+          "n_residues": 265,
+          "mean_plddt": 80.8,
+          "std_plddt": 13.99,
+          "confidence_tier": "High (70-90)"
+        },
+        "activation_loop": {
+          "n_residues": 30,
+          "mean_plddt": 92.05,
+          "std_plddt": 4.28,
+          "confidence_tier": "Very High (>90)"
+        },
+        "c_terminal_tail": {
+          "n_residues": 105,
+          "mean_plddt": 85.14,
+          "std_plddt": 18.42,
+          "confidence_tier": "High (70-90)"
+        }
+      }
+    },
+    "motifs": {
+      "STN7_Q9S713": {
+        "G-loop (P-loop)": [
+          {
+            "start": 141,
+            "end": 146,
+            "sequence": "GEGSFG"
+          }
+        ],
+        "HRD motif (C-loop)": [
+          {
+            "start": 277,
+            "end": 279,
+            "sequence": "HRD"
+          }
+        ],
+        "DFG motif": [],
+        "APE motif": [
+          {
+            "start": 324,
+            "end": 326,
+            "sequence": "APE"
+          }
+        ],
+        "GXGXXG (alternative)": [
+          {
+            "start": 141,
+            "end": 146,
+            "sequence": "GEGSFG"
+          }
+        ]
+      },
+      "STN8_Q9LZV4": {
+        "G-loop (P-loop)": [
+          {
+            "start": 140,
+            "end": 145,
+            "sequence": "GEGSFG"
+          }
+        ],
+        "HRD motif (C-loop)": [
+          {
+            "start": 306,
+            "end": 308,
+            "sequence": "HRD"
+          }
+        ],
+        "DFG motif": [
+          {
+            "start": 326,
+            "end": 328,
+            "sequence": "DFG"
+          }
+        ],
+        "APE motif": [],
+        "GXGXXG (alternative)": [
+          {
+            "start": 140,
+            "end": 145,
+            "sequence": "GEGSFG"
+          }
+        ]
+      }
+    },
+    "ligands": [
+      {
+        "name": "ATP",
+        "cid": "5957",
+        "mw": 507.18,
+        "role": "Natural kinase substrate — phosphate donor",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "ADP",
+        "cid": "644208",
+        "mw": 427.2,
+        "role": "Product of ATP-dependent phosphorylation",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "Staurosporine",
+        "cid": "44259",
+        "mw": 466.53,
+        "role": "Broad-spectrum Ser/Thr kinase inhibitor — positive control",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "K252a",
+        "cid": "3084981",
+        "mw": 467.52,
+        "role": "Staurosporine analogue with higher selectivity",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "SB216763",
+        "cid": "176158",
+        "mw": 373.83,
+        "role": "GSK-3 Ser/Thr kinase inhibitor",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "Quercetin",
+        "cid": "5280343",
+        "mw": 302.24,
+        "role": "Plant flavonoid with kinase-inhibitory activity",
+        "pdbqt_ready": true
+      },
+      {
+        "name": "Imatinib",
+        "cid": "5291",
+        "mw": 493.6,
+        "role": "Gleevec — reference kinase inhibitor for comparison",
+        "pdbqt_ready": true
+      }
+    ],
+    "structure": "structures/STN7_STN8_AF2multimer_rank001.pdb",
+    "tracks": "data/tracks/stn7-stn8.json",
+    "figures": [
+      {
+        "src": "assets/figures/stn7-stn8/summary_multipanel.png",
+        "caption": "Integrated multi-panel summary of the STN7/STN8 study",
+        "category": "summary"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/stn7_stn8_complex_plddt.png",
+        "caption": "STN7–STN8 heterodimer pLDDT (AF2-multimer v3)",
+        "category": "complex"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/stn7_stn8_pae_matrix.png",
+        "caption": "Heterodimer predicted aligned error matrix",
+        "category": "complex"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/stn7_stn8_interface_contacts.png",
+        "caption": "Inter-chain interface contacts (≤ 6 Å)",
+        "category": "complex"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/colabfold_contact_map.png",
+        "caption": "ColabFold complex contact map",
+        "category": "complex"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/colabfold_interface_composition.png",
+        "caption": "Interface residue composition",
+        "category": "complex"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/alphafold_domain_map_STN7.png",
+        "caption": "STN7 AlphaFold domain map",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/alphafold_domain_map_STN8.png",
+        "caption": "STN8 AlphaFold domain map",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/plddt_confidence_profile.png",
+        "caption": "pLDDT confidence profiles: STN7 vs STN8",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/kinase_ca_distance_profile.png",
+        "caption": "Kinase-domain Cα distance after SVD superposition",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/secondary_structure_comparison.png",
+        "caption": "Secondary structure comparison",
+        "category": "structure"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/kinase_motif_map.png",
+        "caption": "Catalytic kinase motif map (G-loop, HRD, DFG, APE)",
+        "category": "motifs"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/kinase_motifs_conservation_heatmap.png",
+        "caption": "Kinase motif conservation across orthologs",
+        "category": "motifs"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/conservation_shannon_entropy.png",
+        "caption": "Shannon entropy conservation along the MSA",
+        "category": "evolution"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/phylogenetic_tree.png",
+        "caption": "Neighbour-joining phylogeny of STN7/STN8 orthologs",
+        "category": "evolution"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/sequence_identity_heatmap.png",
+        "caption": "Pairwise sequence identity heatmap",
+        "category": "evolution"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/aa_composition_comparison.png",
+        "caption": "Amino-acid composition comparison",
+        "category": "sequence"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/hydrophobicity_profile.png",
+        "caption": "Kyte–Doolittle hydropathy profiles (w = 19)",
+        "category": "sequence"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/interaction_network_STN7.png",
+        "caption": "STN7 functional interaction network",
+        "category": "network"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/interaction_network_STN8.png",
+        "caption": "STN8 functional interaction network",
+        "category": "network"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/cellular_pathway_STN7.png",
+        "caption": "STN7 cellular pathway context",
+        "category": "network"
+      },
+      {
+        "src": "assets/figures/stn7-stn8/cellular_pathway_STN8.png",
+        "caption": "STN8 cellular pathway context",
+        "category": "network"
+      }
+    ]
+  }
+]
