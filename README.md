@@ -23,7 +23,7 @@ This repository hosts the **public frontend presentation portal and interactive 
 
 👉 **[https://suleimancomputationalstructuralbiology.github.io/](https://suleimancomputationalstructuralbiology.github.io/)**
 
-It showcases the research outputs, mathematical derivations, publication figures, interactive macromolecular models, and an interlinked 41-note structural biology knowledge base developed by **Suleiman Hajizadeh**.
+It showcases the research outputs, mathematical derivations, publication figures, interactive macromolecular models, and an interlinked 48-note structural biology knowledge base developed by **Suleiman Hajizadeh**.
 
 ---
 
@@ -40,7 +40,7 @@ SuleimanComputationalStructuralBiology.github.io/
 ├── data/
 │   ├── site.json            # Build metadata, sync timestamp & project counts
 │   ├── projects.json        # Curated project metadata, metrics & domain models
-│   ├── wiki.json            # 41 interlinked notes (entities, concepts, syntheses, sources)
+│   ├── wiki.json            # 48 interlinked notes (entities, concepts, syntheses, sources)
 │   ├── curriculum.json      # Structural Bioinformatics MSc curriculum syllabus
 │   └── tracks/
 │       ├── akt1.json        # AKT1 per-residue pLDDT, binned PAE matrix, sequence
@@ -69,7 +69,7 @@ SuleimanComputationalStructuralBiology.github.io/
   - 30 high-resolution figures categorized by project and analysis type (Structure, Confidence, Heterodimer Complex, Evolution, Kinase Motifs, Networks).
   - Modal lightbox viewer with keyboard accessibility (`Esc` / light-dismiss).
 * **Compounding Knowledge Base (LLM Wiki)**:
-  - 41 interlinked notes compiled from primary literature, AlphaFold runs, and biophysical mechanics.
+  - 48 interlinked notes compiled from primary literature, AlphaFold runs, and biophysical mechanics.
   - Real-time fuzzy search across titles, aliases, tags, and note content.
   - Interactive reader modal that renders GitHub Flavored Markdown (`marked`), sanitizes input (`DOMPurify`), renders LaTeX math formulas (`KaTeX`), and resolves `[[wikilinks]]` into seamless in-dialog note navigation.
 * **Accessible Two-State Dark/Light Theme**:
