@@ -12,6 +12,7 @@
   <a href="https://suleimancomputationalstructuralbiology.github.io/"><img src="https://img.shields.io/badge/Live_Portal-suleimancomputationalstructuralbiology.github.io-00f2fe?style=flat-square&logo=google-chrome&logoColor=white" alt="Live Site"/></a>
   <a href="https://github.com/SuleimanComputationalStructuralBiology"><img src="https://img.shields.io/badge/Organization-SuleimanComputationalStructuralBiology-7209b7?style=flat-square&logo=github&logoColor=white" alt="Organization"/></a>
   <a href="https://github.com/SuleimanComputationalStructuralBiology/SuleimanComputationalStructuralBiology"><img src="https://img.shields.io/badge/Private_Core_Repo-SuleimanComputationalStructuralBiology-darkred?style=flat-square&logo=lock&logoColor=white" alt="Backend Repo"/></a>
+  <a href="mailto:suleyman.hacizade1@gmail.com?subject=Access%20Request%20-%20SuleimanComputationalStructuralBiology%20Private%20Data"><img src="https://img.shields.io/badge/Request_Data_Access-suleyman.hacizade1%40gmail.com-10b981?style=flat-square&logo=gmail&logoColor=white" alt="Request Access"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"/></a>
 </p>
 
@@ -23,7 +24,10 @@ This repository hosts the **public frontend presentation portal and interactive 
 
 👉 **[https://suleimancomputationalstructuralbiology.github.io/](https://suleimancomputationalstructuralbiology.github.io/)**
 
-It showcases the research outputs, mathematical derivations, publication figures, interactive macromolecular models, and an interlinked 48-note structural biology knowledge base developed by **Suleiman Hajizadeh**.
+It showcases the research outputs, mathematical derivations, publication figures, interactive macromolecular models, and an interlinked 48-note structural biology knowledge base developed by **Suleiman Hajizadeh** (Institute of Molecular Biology, IMB).
+
+> [!IMPORTANT]
+> **🔒 Private Data & Access Requests:** The raw datasets, full multi-sequence alignments (MSAs), complete AlphaFold2 scoring matrices, docking trajectories, manuscript drafts, and backend source pipelines in `SuleimanComputationalStructuralBiology` are **private**. If you wish to request access to the private repository or raw research data, please contact: **[suleyman.hacizade1@gmail.com](mailto:suleyman.hacizade1@gmail.com?subject=Access%20Request%20-%20SuleimanComputationalStructuralBiology%20Private%20Data)**.
 
 ---
 
