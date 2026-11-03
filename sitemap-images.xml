@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://suleimancomputationalstructuralbiology.github.io/research/akt1/</loc>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_cartoon_3D.png</image:loc>
+      <image:title>AKT1 cartoon 3D</image:title>
+      <image:caption>AKT1 cartoon backbone (PyMOL render)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_pLDDT_3D.png</image:loc>
+      <image:title>AKT1 pLDDT 3D</image:title>
+      <image:caption>AKT1 coloured by pLDDT confidence</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_surface_3D.png</image:loc>
+      <image:title>AKT1 surface 3D</image:title>
+      <image:caption>AKT1 molecular surface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_pLDDT.png</image:loc>
+      <image:title>AKT1 pLDDT</image:title>
+      <image:caption>Per-residue pLDDT confidence profile</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_Ramachandran.png</image:loc>
+      <image:title>AKT1 Ramachandran</image:title>
+      <image:caption>Ramachandran φ/ψ backbone torsion plot</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_ContactMap.png</image:loc>
+      <image:title>AKT1 ContactMap</image:title>
+      <image:caption>Cα pairwise distance &amp; contact map (≤ 8 Å, |i−j| ≥ 6)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_TNBC_42642_0_pae.png</image:loc>
+      <image:title>AKT1 TNBC 42642 0 pae</image:title>
+      <image:caption>ColabFold predicted aligned error (5 models)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_TNBC_42642_0_coverage.png</image:loc>
+      <image:title>AKT1 TNBC 42642 0 coverage</image:title>
+      <image:caption>MSA sequence coverage (MMseqs2)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://suleimancomputationalstructuralbiology.github.io/research/stn7-stn8/</loc>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/summary_multipanel.png</image:loc>
+      <image:title>summary multipanel</image:title>
+      <image:caption>Integrated multi-panel summary of the STN7/STN8 study</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_complex_plddt.png</image:loc>
+      <image:title>stn7 stn8 complex plddt</image:title>
+      <image:caption>STN7–STN8 heterodimer pLDDT (AF2-multimer v3)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_pae_matrix.png</image:loc>
+      <image:title>stn7 stn8 pae matrix</image:title>
+      <image:caption>Heterodimer predicted aligned error matrix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_interface_contacts.png</image:loc>
+      <image:title>stn7 stn8 interface contacts</image:title>
+      <image:caption>Inter-chain interface contacts (≤ 6 Å)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/colabfold_contact_map.png</image:loc>
+      <image:title>colabfold contact map</image:title>
+      <image:caption>ColabFold complex contact map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/colabfold_interface_composition.png</image:loc>
+      <image:title>colabfold interface composition</image:title>
+      <image:caption>Interface residue composition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/alphafold_domain_map_STN7.png</image:loc>
+      <image:title>alphafold domain map STN7</image:title>
+      <image:caption>STN7 AlphaFold domain map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/alphafold_domain_map_STN8.png</image:loc>
+      <image:title>alphafold domain map STN8</image:title>
+      <image:caption>STN8 AlphaFold domain map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/plddt_confidence_profile.png</image:loc>
+      <image:title>plddt confidence profile</image:title>
+      <image:caption>pLDDT confidence profiles: STN7 vs STN8</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_ca_distance_profile.png</image:loc>
+      <image:title>kinase ca distance profile</image:title>
+      <image:caption>Kinase-domain Cα distance after SVD superposition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/secondary_structure_comparison.png</image:loc>
+      <image:title>secondary structure comparison</image:title>
+      <image:caption>Secondary structure comparison</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_motif_map.png</image:loc>
+      <image:title>kinase motif map</image:title>
+      <image:caption>Catalytic kinase motif map (G-loop, HRD, DFG, APE)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_motifs_conservation_heatmap.png</image:loc>
+      <image:title>kinase motifs conservation heatmap</image:title>
+      <image:caption>Kinase motif conservation across orthologs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/conservation_shannon_entropy.png</image:loc>
+      <image:title>conservation shannon entropy</image:title>
+      <image:caption>Shannon entropy conservation along the MSA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/phylogenetic_tree.png</image:loc>
+      <image:title>phylogenetic tree</image:title>
+      <image:caption>Neighbour-joining phylogeny of STN7/STN8 orthologs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/sequence_identity_heatmap.png</image:loc>
+      <image:title>sequence identity heatmap</image:title>
+      <image:caption>Pairwise sequence identity heatmap</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/aa_composition_comparison.png</image:loc>
+      <image:title>aa composition comparison</image:title>
+      <image:caption>Amino-acid composition comparison</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/hydrophobicity_profile.png</image:loc>
+      <image:title>hydrophobicity profile</image:title>
+      <image:caption>Kyte–Doolittle hydropathy profiles (w = 19)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/interaction_network_STN7.png</image:loc>
+      <image:title>interaction network STN7</image:title>
+      <image:caption>STN7 functional interaction network</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/interaction_network_STN8.png</image:loc>
+      <image:title>interaction network STN8</image:title>
+      <image:caption>STN8 functional interaction network</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/cellular_pathway_STN7.png</image:loc>
+      <image:title>cellular pathway STN7</image:title>
+      <image:caption>STN7 cellular pathway context</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/cellular_pathway_STN8.png</image:loc>
+      <image:title>cellular pathway STN8</image:title>
+      <image:caption>STN8 cellular pathway context</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://suleimancomputationalstructuralbiology.github.io/gallery/</loc>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_cartoon_3D.png</image:loc>
+      <image:title>AKT1 cartoon 3D</image:title>
+      <image:caption>AKT1 cartoon backbone (PyMOL render)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_pLDDT_3D.png</image:loc>
+      <image:title>AKT1 pLDDT 3D</image:title>
+      <image:caption>AKT1 coloured by pLDDT confidence</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_surface_3D.png</image:loc>
+      <image:title>AKT1 surface 3D</image:title>
+      <image:caption>AKT1 molecular surface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_pLDDT.png</image:loc>
+      <image:title>AKT1 pLDDT</image:title>
+      <image:caption>Per-residue pLDDT confidence profile</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_Ramachandran.png</image:loc>
+      <image:title>AKT1 Ramachandran</image:title>
+      <image:caption>Ramachandran φ/ψ backbone torsion plot</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_ContactMap.png</image:loc>
+      <image:title>AKT1 ContactMap</image:title>
+      <image:caption>Cα pairwise distance &amp; contact map (≤ 8 Å, |i−j| ≥ 6)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_TNBC_42642_0_pae.png</image:loc>
+      <image:title>AKT1 TNBC 42642 0 pae</image:title>
+      <image:caption>ColabFold predicted aligned error (5 models)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/akt1/AKT1_TNBC_42642_0_coverage.png</image:loc>
+      <image:title>AKT1 TNBC 42642 0 coverage</image:title>
+      <image:caption>MSA sequence coverage (MMseqs2)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/summary_multipanel.png</image:loc>
+      <image:title>summary multipanel</image:title>
+      <image:caption>Integrated multi-panel summary of the STN7/STN8 study</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_complex_plddt.png</image:loc>
+      <image:title>stn7 stn8 complex plddt</image:title>
+      <image:caption>STN7–STN8 heterodimer pLDDT (AF2-multimer v3)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_pae_matrix.png</image:loc>
+      <image:title>stn7 stn8 pae matrix</image:title>
+      <image:caption>Heterodimer predicted aligned error matrix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/stn7_stn8_interface_contacts.png</image:loc>
+      <image:title>stn7 stn8 interface contacts</image:title>
+      <image:caption>Inter-chain interface contacts (≤ 6 Å)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/colabfold_contact_map.png</image:loc>
+      <image:title>colabfold contact map</image:title>
+      <image:caption>ColabFold complex contact map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/colabfold_interface_composition.png</image:loc>
+      <image:title>colabfold interface composition</image:title>
+      <image:caption>Interface residue composition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/alphafold_domain_map_STN7.png</image:loc>
+      <image:title>alphafold domain map STN7</image:title>
+      <image:caption>STN7 AlphaFold domain map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/alphafold_domain_map_STN8.png</image:loc>
+      <image:title>alphafold domain map STN8</image:title>
+      <image:caption>STN8 AlphaFold domain map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/plddt_confidence_profile.png</image:loc>
+      <image:title>plddt confidence profile</image:title>
+      <image:caption>pLDDT confidence profiles: STN7 vs STN8</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_ca_distance_profile.png</image:loc>
+      <image:title>kinase ca distance profile</image:title>
+      <image:caption>Kinase-domain Cα distance after SVD superposition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/secondary_structure_comparison.png</image:loc>
+      <image:title>secondary structure comparison</image:title>
+      <image:caption>Secondary structure comparison</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_motif_map.png</image:loc>
+      <image:title>kinase motif map</image:title>
+      <image:caption>Catalytic kinase motif map (G-loop, HRD, DFG, APE)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/kinase_motifs_conservation_heatmap.png</image:loc>
+      <image:title>kinase motifs conservation heatmap</image:title>
+      <image:caption>Kinase motif conservation across orthologs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/conservation_shannon_entropy.png</image:loc>
+      <image:title>conservation shannon entropy</image:title>
+      <image:caption>Shannon entropy conservation along the MSA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/phylogenetic_tree.png</image:loc>
+      <image:title>phylogenetic tree</image:title>
+      <image:caption>Neighbour-joining phylogeny of STN7/STN8 orthologs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/sequence_identity_heatmap.png</image:loc>
+      <image:title>sequence identity heatmap</image:title>
+      <image:caption>Pairwise sequence identity heatmap</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/aa_composition_comparison.png</image:loc>
+      <image:title>aa composition comparison</image:title>
+      <image:caption>Amino-acid composition comparison</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/hydrophobicity_profile.png</image:loc>
+      <image:title>hydrophobicity profile</image:title>
+      <image:caption>Kyte–Doolittle hydropathy profiles (w = 19)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/interaction_network_STN7.png</image:loc>
+      <image:title>interaction network STN7</image:title>
+      <image:caption>STN7 functional interaction network</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/interaction_network_STN8.png</image:loc>
+      <image:title>interaction network STN8</image:title>
+      <image:caption>STN8 functional interaction network</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/cellular_pathway_STN7.png</image:loc>
+      <image:title>cellular pathway STN7</image:title>
+      <image:caption>STN7 cellular pathway context</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimancomputationalstructuralbiology.github.io/assets/figures/stn7-stn8/cellular_pathway_STN8.png</image:loc>
+      <image:title>cellular pathway STN8</image:title>
+      <image:caption>STN8 cellular pathway context</image:caption>
+    </image:image>
+  </url>
+</urlset>

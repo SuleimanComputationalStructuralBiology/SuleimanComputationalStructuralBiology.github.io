@@ -1,0 +1,25 @@
+# robots.txt for Suleiman Computational Structural Biology
+# Generated: 2026-11-03
+# Website: https://suleimancomputationalstructuralbiology.github.io/
+
+User-agent: *
+Allow: /
+Allow: /research/
+Allow: /research/akt1/
+Allow: /research/stn7-stn8/
+Allow: /explorer/
+Allow: /gallery/
+Allow: /methods/
+Allow: /knowledge/
+Allow: /curriculum/
+Allow: /about/
+Allow: /assets/
+Allow: /data/
+Allow: /structures/
+
+# Host
+Host: https://suleimancomputationalstructuralbiology.github.io
+
+# XML Sitemaps
+Sitemap: https://suleimancomputationalstructuralbiology.github.io/sitemap.xml
+Sitemap: https://suleimancomputationalstructuralbiology.github.io/sitemap-images.xml

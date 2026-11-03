@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <script>try{document.querySelector('meta[name="color-scheme"]').content=localStorage.getItem("color-scheme")??"light dark"}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structural Biology Knowledge Base (47 Notes) | SuleimanCSB</title>
+  <meta name="description" content="Comprehensive interlinked knowledge base of entities (AKT1, STN7, STN8, LHCII), concepts (Cryo-EM, MSMs, PAE, pLDDT), and biophysical syntheses." />
+  <meta name="keywords" content="Computational Structural Biology, AlphaFold2, ColabFold, AF2-multimer, AKT1, STN7, STN8, pLDDT, PAE, Ramachandran, Molecular Docking, AutoDock Vina, Suleiman Hajizadeh, IMB, Institute of Molecular Biology" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="creator" content="Suleiman Hajizadeh" />
+  <meta name="publisher" content="Institute of Molecular Biology (IMB)" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+  <link rel="canonical" href="https://suleimancomputationalstructuralbiology.github.io/knowledge/" />
+  <link rel="alternate" hreflang="en" href="https://suleimancomputationalstructuralbiology.github.io/knowledge/" />
+  <link rel="alternate" hreflang="x-default" href="https://suleimancomputationalstructuralbiology.github.io/knowledge/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Suleiman Computational Structural Biology" />
+  <meta property="og:title" content="Structural Biology Knowledge Base (47 Notes) | SuleimanCSB" />
+  <meta property="og:description" content="Comprehensive interlinked knowledge base of entities (AKT1, STN7, STN8, LHCII), concepts (Cryo-EM, MSMs, PAE, pLDDT), and biophysical syntheses." />
+  <meta property="og:url" content="https://suleimancomputationalstructuralbiology.github.io/knowledge/" />
+  <meta property="og:image" content="https://suleimancomputationalstructuralbiology.github.io/assets/og-image.png" />
+  <meta property="og:image:secure_url" content="https://suleimancomputationalstructuralbiology.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Structural Biology Knowledge Base (47 Notes) | SuleimanCSB" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Structural Biology Knowledge Base (47 Notes) | SuleimanCSB" />
+  <meta name="twitter:description" content="Comprehensive interlinked knowledge base of entities (AKT1, STN7, STN8, LHCII), concepts (Cryo-EM, MSMs, PAE, pLDDT), and biophysical syntheses." />
+  <meta name="twitter:image" content="https://suleimancomputationalstructuralbiology.github.io/assets/og-image.png" />
+  <meta name="twitter:creator" content="@SuleimanHajizadeh" />
+  <meta name="twitter:site" content="@SuleimanHajizadeh" />
+
+  <!-- Academic Citations & Dublin Core -->
+  <meta name="citation_title" content="Structural Biology Knowledge Base (47 Notes) | SuleimanCSB" />
+  <meta name="citation_author" content="Hajizadeh, Suleiman" />
+  <meta name="citation_publication_date" content="2026/04/01" />
+  <meta name="citation_technical_report_institution" content="Institute of Molecular Biology (IMB)" />
+  <meta name="DC.title" content="Structural Biology Knowledge Base (47 Notes) | SuleimanCSB" />
+  <meta name="DC.creator" content="Suleiman Hajizadeh" />
+  <meta name="DC.description" content="Comprehensive interlinked knowledge base of entities (AKT1, STN7, STN8, LHCII), concepts (Cryo-EM, MSMs, PAE, pLDDT), and biophysical syntheses." />
+  <meta name="DC.publisher" content="Institute of Molecular Biology (IMB)" />
+  <meta name="DC.language" content="en" />
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.json" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://suleimancomputationalstructuralbiology.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Knowledge Base",
+      "item": "https://suleimancomputationalstructuralbiology.github.io/knowledge/"
+    }
+  ]
+}
+  </script>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../#top" class="brand" aria-label="Suleiman Computational Structural Biology — home">
+        <img src="../assets/logo-icon.svg" alt="SuleimanCSB Logo" width="36" height="36" />
+        <span class="brand-text">Suleiman<span class="accent">CSB</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../research/">Research</a></li>
+          <li><a href="../explorer/">3D Explorer</a></li>
+          <li><a href="../gallery/">Figures</a></li>
+          <li><a href="../methods/">Methods</a></li>
+          <li><a href="../knowledge/">Knowledge Base</a></li>
+          <li><a href="../curriculum/">Curriculum</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" type="button" aria-label="Toggle theme">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="https://github.com/SuleimanComputationalStructuralBiology" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container" style="padding-top: 1.5rem;">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="https://suleimancomputationalstructuralbiology.github.io/">Home</a> <span class="bc-sep">/</span> <span>Knowledge Base</span>
+      </nav>
+    </div>
+
+    
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Compounding Knowledge Repository</p>
+          <h1>Structural Biology Knowledge Base (47 Interlinked Notes)</h1>
+          <p class="lead">An evolving, interlinked scientific wiki spanning biological entities, biophysical concepts, comprehensive syntheses and literature sources maintained alongside laboratory research.</p>
+        </header>
+
+        <p class="muted">Search and read any note in full interactive Markdown + LaTeX view on our <a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge">interactive Knowledge Base reader</a>.</p>
+
+        <div class="kb-grid" style="margin-top: 2rem;">
+          
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">AKT1 (RAC-alpha serine/threonine-protein kinase)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">AKT1 (RAC-alpha serine/threonine-protein kinase)
+
+**AKT1** (UniProt: [P31749](https://www.uniprot.org/uniprot/P31749)) is a central human serine/threonine kinase that functions as the key nodal hub in the PI3K/Akt/mTOR…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/human</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/cancer</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#oncology/tnbc</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">AlphaFold2</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">AlphaFold2
+
+**AlphaFold2** is a deep learning system developed by Google DeepMind (Jumper et al., 2021) that predicts 3D coordinates of proteins from their primary amino acid sequences with atomic accuracy.
+
+In this re…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#machine-learning/structural-biology</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#protein-structure-prediction</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#deepmind</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Cytochrome b6f Complex</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Cytochrome b6f Complex
+
+The **Cytochrome $b_6f$ Complex** is a dimeric, multisubunit integral membrane protein complex embedded in the thylakoid membrane of chloroplasts and cyanobacteria. It bridges **Photosystem II (…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#plant-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/electron-transport</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#redox-sensor</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">LHCII (Light-Harvesting Complex II)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">LHCII (Light-Harvesting Complex II)
+
+**Light-Harvesting Complex II (LHCII)** is the major light-harvesting antenna complex of Photosystem II (PSII) in photosynthetic eukaryotes (plants and green algae). It is predomina…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#plant-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/antenna</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#phosphorylation-target</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">PDK1 (3-Phosphoinositide-Dependent Protein Kinase-1)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">PDK1 (3-Phosphoinositide-Dependent Protein Kinase-1)
+
+**PDK1** (encoded by *PDPK1*, UniProt: [O15530](https://www.uniprot.org/uniprot/O15530)) is a master serine/threonine kinase belonging to the AGC kinase family. It…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/human</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#signaling/pi3k-akt</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#master-regulator</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">PSII Reaction Center D1 Protein</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">PSII Reaction Center D1 Protein
+
+The **D1 protein** (encoded by chloroplast gene *psbA*) is one of the two core reaction center proteins (alongside D2/PsbD) of **Photosystem II (PSII)**. It coordinates the primary elec…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#plant-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/reaction-center</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#stn8-substrate</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">PTEN (Phosphatase and Tensin Homolog)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">PTEN (Phosphatase and Tensin Homolog)
+
+**PTEN** (UniProt: [P60484](https://www.uniprot.org/uniprot/P60484)) is a major human tumor suppressor dual-specificity phosphatase that serves as the essential negative regulator…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#oncology/tumor-suppressor</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#lipid-phosphatase</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#pi3k-antagonist</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">STN7 (State Transition Kinase 7)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">STN7 (State Transition Kinase 7)
+
+**STN7** is a chloroplast thylakoid membrane-associated serine/threonine protein kinase found across green algae and land plants. It plays an indispensable role in **photosynthetic acc…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/plant</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#chloroplast/thylakoid</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">STN8 (State Transition Kinase 8)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">STN8 (State Transition Kinase 8)
+
+**STN8** is a chloroplast thylakoid protein kinase in photosynthetic organisms dedicated to the phosphorylation of **Photosystem II (PSII) core reaction center subunits** (D1, D2, CP43…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/plant</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#chloroplast/photoprotection</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">TAP38 / PPH1 (Thylakoid-Associated Phosphatase 38)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">TAP38 / PPH1 (Thylakoid-Associated Phosphatase 38)
+
+**TAP38** (also termed **PPH1** - *Photosystem II Core Phosphatase / Protein Phosphatase 1*, At4g27800) is a monomeric protein phosphatase located in the chloroplast…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#plant-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/phosphatase</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#state-transitions</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">TP53 (Tumor Protein p53)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">TP53 (Tumor Protein p53)
+
+**TP53** is the principal human tumor suppressor gene, frequently termed the "Guardian of the Genome". It encodes the transcription factor p53, which responds to cellular stress (DNA damage, h…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#genetics/cancer</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#tumor-suppressor</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#mutation/hotspots</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="entity">entity</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">mTORC2 (Mechanistic Target of Rapamycin Complex 2)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">mTORC2 (Mechanistic Target of Rapamycin Complex 2)
+
+**mTORC2** is a multi-protein kinase complex centered around the serine/threonine protein kinase **mTOR** (mechanistic target of rapamycin), assembled together with *…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#oncology/signaling</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase-complex</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#hydrophobic-motif-kinase</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Biochemical Mechanism of Phosphoryl Transfer</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Biochemical Mechanism of Phosphoryl Transfer
+
+**Phosphoryl Transfer** is the fundamental chemical reaction catalyzed by protein kinases, transferring the terminal $\gamma$-phosphoryl group ($\text{PO}_3^{2-}$) from ade…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#biochemistry/enzymology</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase-catalysis/mechanism</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#transition-state</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Contact Map Analysis</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Contact Map Analysis
+
+A **Contact Map** is a 2D binary or distance-weighted symmetric matrix representation of a protein's 3D tertiary structure. It captures the global folding topology by mapping spatial proximities b…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/topology</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#distance-matrix</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#contact-map</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Cryo-Electron Microscopy (Cryo-EM)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Cryo-Electron Microscopy (Cryo-EM)
+
+**Cryogenic Electron Microscopy (Cryo-EM)** is an experimental structural biology technique that determines the 3D structures of macromolecular complexes, membrane proteins, and mult…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/experimental-methods</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#single-particle-analysis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#membrane-complexes</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">DNA-Protein Recognition & Binding Dynamics</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">DNA-Protein Recognition & Binding Dynamics
+
+**DNA-Protein Recognition** describes the physical and chemical principles by which DNA-binding proteins, such as transcription factors, enzymes, and histones, specifically i…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#biophysics/macromolecular-recognition</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#transcription-factors/dna-binding</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/groove-contacts</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">De Novo Protein Design</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">De Novo Protein Design
+
+**De Novo Protein Design** involves creating entirely artificial, functional proteins from scratch without relying on naturally occurring homologous templates. Modern deep learning has revolutio…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#protein-design/generative-ai</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/deep-learning</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#rfdiffusion</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Intrinsically Disordered Proteins & Condensates</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Intrinsically Disordered Proteins & Condensates
+
+**Intrinsically Disordered Proteins (IDPs)** and **Intrinsically Disordered Regions (IDRs)** are functional polypeptide segments that lack a stable, unique 3D equilibriu…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/disorder</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#idr/conformational-ensembles</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#phase-separation/condensates</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Kinase Activation Loop & Allostery</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Kinase Activation Loop & Allostery
+
+The **Activation Loop (A-loop)** is a flexible segment within the catalytic domain of protein kinases spanning between the conserved **DFG (Asp-Phe-Gly)** motif and the **APE (Ala-Pr…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/structural-mechanics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#allostery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#phosphorylation</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Local Distance Difference Test (LDDT & pLDDT)</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Local Distance Difference Test (LDDT & pLDDT)
+
+The **Local Distance Difference Test (LDDT)** (Mariani et al., 2013) is a superposition-free structural metric used to assess local model accuracy by comparing internal in…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/metrics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#protein-structure-prediction/validation</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#alphafold</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Markov State Models</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Markov State Models (MSMs)
+
+**Markov State Models (MSMs)** are mathematical frameworks used to model the long-timescale conformational kinetics and thermodynamics of biomolecules from ensembles of short, distributed [[…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#molecular-dynamics/kinetics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#markov-chains</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#conformational-transitions</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Molecular Docking Principles</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Molecular Docking Principles
+
+**Molecular Docking** is a computational method that predicts the preferred orientation (binding pose) and binding affinity of a small molecule ligand or protein partner within the active…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#drug-discovery/docking</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#protein-ligand/interactions</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#scoring-functions</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Molecular Dynamics & Enhanced Sampling</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Molecular Dynamics & Enhanced Sampling
+
+**Molecular Dynamics (MD)** is a computational method that simulates the time-dependent physical movements of atoms and molecules by numerically solving Newton’s classical equati…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#molecular-dynamics/simulation</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#enhanced-sampling/metadynamics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#free-energy-landscapes</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">PI3K-Akt-mTOR Signaling Pathway</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">PI3K-Akt-mTOR Signaling Pathway
+
+The **PI3K/Akt/mTOR signaling cascade** is one of the most critical intracellular signal transduction pathways in human physiology, orchestrating cell growth, survival, glucose metaboli…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#oncology/signaling</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase-cascade</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#breast-cancer/tnbc</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Ramachandran Dihedral Angles</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Ramachandran Dihedral Angles
+
+The **Ramachandran Plot** (Ramachandran, Ramakrishnan, & Sasisekharan, 1963) maps the distribution of the peptide backbone dihedral torsion angles **$\phi$ (phi)** and **$\psi$ (psi)**, de…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/geometry</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#protein-backbone</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#torsion-angles</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Residue Interaction Networks & Graph Centrality</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Residue Interaction Networks & Graph Centrality
+
+A **Residue Interaction Network (RIN)** is a graph representation of a protein structure $G = (V, E)$, where each amino acid residue is a node $v \in V$, and edges $e \i…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#network-biology/structure</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#graph-centrality/allostery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#residue-interaction-networks</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Structural Superposition & RMSD</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Structural Superposition & RMSD
+
+**Root-Mean-Square Deviation (RMSD)** is the fundamental quantitative measure of the average distance between corresponding backbones (typically $C_\alpha$ atoms) of two superimposed pr…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/alignment</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#superposition</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#rmsd</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Thylakoid State Transitions</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Thylakoid State Transitions
+
+**State Transitions** represent a rapid physiological mechanism in photosynthetic organisms (plants and algae) that dynamically balances light excitation energy between **Photosystem II (PS…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#plant-biology/photosynthesis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/dynamics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#light-harvesting</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="concept">concept</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">X-Ray Crystallography & Electron Density</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">X-Ray Crystallography & Electron Density
+
+**X-Ray Crystallography** is the foundational experimental method that determines the atomic coordinates of macromolecules by scattering X-ray beams through a periodic 3D prote…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/experimental-methods</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#crystallography/diffraction</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#electron-density</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Allosteric Drug Discovery & Conformational Selection in Kinases</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Allosteric Drug Discovery & Conformational Selection in Kinases
+
+This synthesis provides an integrative overview of computational structural biology strategies used to target kinase conformational equilibria, focusing…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/drug-discovery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase/allostery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#computational-biophysics</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">AlphaFold Multi-Chain Modeling and Interface Thermodynamics - Heterooligomer Docking and PAE Deconvolution</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">AlphaFold Multi-Chain Modeling and Interface Thermodynamics: Heterooligomer Docking and PAE Deconvolution
+
+This synthesis presents a rigorous biophysical framework for modeling macromolecular assemblies and protein-pro…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/alphafold-multimer</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/protein-complexes</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#machine-learning/pae-analysis</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Comparative Kinase Mechanics - AKT1 vs STN7-STN8</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Comparative Kinase Mechanics: Human Oncogenic AKT1 vs Plant Thylakoid STN7/STN8
+
+This synthesis compares the structural architecture, membrane-association modes, domain confidence dynamics, and regulatory allostery bet…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/kinase-comparison</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/allostery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#membrane-kinases</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Comparative Kinase Mechanics - Catalytic Triads, Non-Canonical DLG Switches, and Phosphorylation Dynamics</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Comparative Kinase Mechanics: Catalytic Triads, Non-Canonical DLG Switches, and Phosphorylation Dynamics
+
+This synthesis provides a unified structural and chemical comparison between human oncogenic AGC kinase **[[AKT1…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/kinase-mechanics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/allostery</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#kinase-regulation/evolution</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Multi-Scale Biophysical Simulation - From Quantum Mechanics (QM-MM) to Enhanced Sampling Metadynamics and Coarse-Grained Bilayers</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Multi-Scale Biophysical Simulation: From Quantum Mechanics (QM/MM) to Enhanced Sampling Metadynamics and Coarse-Grained Bilayers
+
+This synthesis connects the complete 9-module curriculum of our laboratory (`Structural…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/biophysical-simulation</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#molecular-dynamics/enhanced-sampling</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#multiscale/qmmm-martini</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Network to Structure - From WGCNA Hubs to Allosteric Kinase Inhibitors</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Multi-Scale Computational Paradigm: From WGCNA Transcriptomic Hubs to Allosteric Kinase Inhibitors
+
+This synthesis delineates the complete multi-scale computational structural biology framework that bridges transcripto…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/multi-scale-pipeline</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#network-biology/wgcna</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/allostery</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Structural Biology Methods - Experimental Cryo-EM and X-Ray vs Deep Learning AF2</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Structural Biology Methods: Experimental Cryo-EM and X-Ray Crystallography vs Deep Learning Structure Prediction
+
+This synthesis compares the core capabilities, spatial resolutions, error profiles, and complementary sy…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/structural-methodology</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#cryo-em/xray-crystallography</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#alphafold/validation</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="synthesis">synthesis</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Thylakoid Phosphorylation Dynamics - STN7-TAP38 Circuit vs STN8 Repair</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Thylakoid Phosphorylation Dynamics: STN7-TAP38 Circuit vs STN8 PSII Repair
+
+This synthesis integrates the structural, evolutionary, and biophysical evidence characterizing the two distinct protein kinase/phosphatase re…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#synthesis/plant-biophysics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#photosynthesis/state-transitions</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/phosphorylation-circuits</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - AKT1 Kinase Modeling Project</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - AKT1 Kinase Modeling Project
+
+* **Path**: `projects/akt1-kinase-modeling/`
+* **Target Protein**: Human AKT1 (*RAC-alpha serine/threonine-protein kinase*, UniProt: [P31749](https://www.uniprot.org/uniprot/P3174…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#project-source/akt1</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/af2</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#oncology/tnbc</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Bioinformatics Starter Kit</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Bioinformatics Starter Kit
+
+* **Path**: `bioinformatics_starter_kit/`
+* **Target Datasets**: Human [[TP53]] (RefSeq [NM_000546.6](https://www.ncbi.nlm.nih.gov/nuccore/NM_000546.6), [NC_000017.11](https://www.n…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#project-source/toolkit</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/tools</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#genomics/algorithms</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Chemical Principles of Enzyme Catalysis & Phosphoryl Transfer</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Chemical Principles of Enzyme Catalysis & Phosphoryl Transfer
+
+* **Location**: `Structural Biology Tutorials/SECOND_EDITION_Jonathan_Clayden_Nick_Greeves_Stuart_Warren_PDFDrive.pdf`
+* **Focus**: Organic and bi…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/organic-chemistry</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#enzyme-kinetics/catalysis</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#phosphoryl-transfer/mechanism</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Graph Theory and Network Biology</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Graph Theory and Network Biology
+
+* **Location**: `Structural Biology Tutorials/graph_theory.pdf`
+* **Focus**: Graph-theoretical algorithms, network topology metrics, and their direct application to biomolecul…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/network-biology</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#graph-theory/algorithms</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#systems-biology/wgcna</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Molecular Biology of the Cell</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Molecular Biology of the Cell (Alberts et al.)
+
+* **Reference**: Alberts, B., Johnson, A., Lewis, J., Morgan, D., Raff, M., Roberts, K., & Walter, P. *Molecular Biology of the Cell* (6th/7th Edition). Garland…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/textbook</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#cell-biology/biophysics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#signal-transduction/membranes</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Organic Chemistry & Reaction Mechanisms</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Organic Chemistry & Reaction Mechanisms (Clayden, Greeves, Warren)
+
+* **Reference**: Clayden, J., Greeves, N., & Warren, S. *Organic Chemistry* (2nd Edition). Oxford University Press.
+* **Path in Library**: `S…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/textbook</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#chemistry/reaction-mechanisms</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#enzymology/phosphoryl-transfer</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Principles of Nucleic Acid Structure</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Principles of Nucleic Acid Structure
+
+* **Location**: `Structural Biology Tutorials/Principles_of_nucleic_acid_structure.pdf`
+* **Focus**: Biophysical principles of DNA and RNA architecture, conformational fle…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/biophysics</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#nucleic-acids/structure</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#dna-protein/interactions</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - STN7-STN8 Docking Project</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - STN7-STN8 Docking Project
+
+* **Path**: `projects/stn7-stn8-docking/`
+* **Target Kinases**: Plant chloroplast thylakoid kinases [[STN7]] and [[STN8]]
+* **Organisms Analyzed**: *Arabidopsis thaliana* (dicot), *O…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#project-source/stn7-stn8</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-biology/plant</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#thylakoid/kinases</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Statistical Inference & Machine Learning in Bioinformatics</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Statistical Inference & Machine Learning in Bioinformatics (Haslwanter, Raschka)
+
+* **Reference**: Haslwanter, T. *An Introduction to Statistics with Python*. Springer International Publishing; Raschka, S. *Py…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#source/textbook</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#statistics/hypothesis-testing</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#machine-learning/bioinformatics</span>
+          </div>
+        </article>
+        
+        <article class="note-card" style="cursor: default;">
+          <span class="pill" data-type="source">source</span>
+          <h3 style="margin: 0.3rem 0;"><a href="https://suleimancomputationalstructuralbiology.github.io/#knowledge" style="color: inherit; text-decoration: none;">Source - Structural Bioinformatics Course Curriculum</a></h3>
+          <p class="muted" style="margin: 0; font-size: 0.85rem;">Source - Structural Bioinformatics Course Curriculum
+
+* **Location**: `Structural Biology Tutorials/Structural-Bioinformatics/`
+* **Author / Institution**: Carlo Camilloni, Department of Biosciences, University of Mila…</p>
+          <div style="margin-top: auto; display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#course-source/milan</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#structural-bioinformatics/curriculum</span><span class="muted" style="font-size: 0.72rem; background: var(--surface-2); padding: 0.15rem 0.45rem; border-radius: 4px;">#molecular-modeling/advanced</span>
+          </div>
+        </article>
+        
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Suleiman Hajizadeh · Suleiman Computational Structural Biology (Institute of Molecular Biology (IMB)) · 🔒 Private data access: <a href="mailto:suleyman.hacizade1@gmail.com">suleyman.hacizade1@gmail.com</a></p>
+      <p class="muted"><a href="../sitemap.xml">Sitemap XML</a> · <a href="../sitemap-images.xml">Image Sitemap</a> · <a href="../robots.txt">robots.txt</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>
