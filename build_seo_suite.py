@@ -530,7 +530,7 @@ def render_page_template(title, description, canonical_url, breadcrumbs, content
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2026 {AUTHOR_NAME} · {ORG_NAME} ({ORG_INSTITUTE}) · 🔒 Private data access: <a href="mailto:{AUTHOR_EMAIL}">{AUTHOR_EMAIL}</a></p>
+      <p>© 2026 {AUTHOR_NAME} · {ORG_NAME} ({ORG_INSTITUTE}) · Private data access: <a href="mailto:{AUTHOR_EMAIL}">{AUTHOR_EMAIL}</a></p>
       <p class="muted"><a href="{root_rel}sitemap.xml">Sitemap XML</a> · <a href="{root_rel}sitemap-images.xml">Image Sitemap</a> · <a href="{root_rel}robots.txt">robots.txt</a></p>
     </div>
   </footer>
@@ -555,7 +555,6 @@ def generate_subpages():
         </header>
 
         <div class="access-notice" role="note">
-          <span class="access-icon">🔒</span>
           <p>
             <strong>Private Data &amp; Core Repository Notice:</strong> All raw MSAs, full AlphaFold score matrices, molecular dynamics trajectories and docking workflows are securely stored in the private core repository. To request research access, please email <a href="mailto:{AUTHOR_EMAIL}?subject=Access%20Request%20-%20SuleimanComputationalStructuralBiology%20Private%20Data">{AUTHOR_EMAIL}</a>.
           </p>
@@ -636,7 +635,6 @@ def generate_subpages():
         </header>
 
         <div class="access-notice" role="note">
-          <span class="access-icon">🔒</span>
           <p>
             <strong>Private Backend Access:</strong> Raw ColabFold scoring tensors, full MSA files (.a3m), and manuscript drafts are maintained in the private core repository. To request access, email <a href="mailto:{AUTHOR_EMAIL}?subject=Access%20Request%20-%20AKT1%20Raw%20Data">{AUTHOR_EMAIL}</a>.
           </p>
@@ -716,7 +714,6 @@ def generate_subpages():
         </header>
 
         <div class="access-notice" role="note">
-          <span class="access-icon">🔒</span>
           <p>
             <strong>Private Research Data Notice:</strong> Docking pose coordinates, full Vina configuration logs, and unreleased comparative manuscripts reside in the private core repository. For data access requests, please contact <a href="mailto:{AUTHOR_EMAIL}?subject=Access%20Request%20-%20STN7%20STN8%20Data">{AUTHOR_EMAIL}</a>.
           </p>
@@ -952,7 +949,7 @@ def generate_subpages():
         <header class="section-head">
           <p class="eyebrow">Compounding Knowledge Repository</p>
           <h1>Structural Biology Knowledge Base (47 Interlinked Notes)</h1>
-          <p class="lead">An evolving, interlinked scientific wiki spanning biological entities, biophysical concepts, comprehensive syntheses and literature sources maintained alongside laboratory research.</p>
+          <p class="lead">An evolving, interlinked scientific knowledge base spanning biological entities, biophysical concepts, comprehensive syntheses and literature sources maintained alongside laboratory research.</p>
         </header>
 
         <p class="muted">Search and read any note in full interactive Markdown + LaTeX view on our <a href="{SITE_URL}/#knowledge">interactive Knowledge Base reader</a>.</p>
@@ -1032,7 +1029,6 @@ def generate_subpages():
           </p>
           
           <div class="access-notice" role="note" style="margin-top: 1.5rem;">
-            <span class="access-icon">🔒</span>
             <div>
               <strong>Strict Private Data &amp; Governance Policy:</strong>
               <p style="margin: 0.35rem 0 0;">
@@ -1055,21 +1051,18 @@ def generate_subpages():
           <h3>Laboratory Architecture</h3>
           <ul class="arch">
             <li>
-              <span class="lock" aria-hidden="true">🔒</span>
               <div>
                 <strong>SuleimanComputationalStructuralBiology (Private)</strong>
-                <span class="muted">Private core repository — raw MSAs, full scoring matrices, molecular dynamics, manuscript drafts &amp; LLM wiki source.</span>
+                <span class="muted">Private core repository — raw MSAs, full scoring matrices, molecular dynamics, manuscript drafts and knowledge base source.</span>
               </div>
             </li>
             <li>
-              <span class="lock" aria-hidden="true">🌐</span>
               <div>
                 <strong>SuleimanComputationalStructuralBiology.github.io (Public)</strong>
-                <span class="muted">Public presentation portal — curated 3D models, downsampled JSON tracks, figure gallery &amp; searchable wiki.</span>
+                <span class="muted">Public presentation portal — curated 3D models, downsampled JSON tracks, figure gallery and searchable knowledge base.</span>
               </div>
             </li>
             <li>
-              <span class="lock" aria-hidden="true">📩</span>
               <div>
                 <strong>Data Access Contact</strong>
                 <span class="muted"><a href="mailto:{AUTHOR_EMAIL}">{AUTHOR_EMAIL}</a></span>
